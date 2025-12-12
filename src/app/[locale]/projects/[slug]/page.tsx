@@ -1,6 +1,9 @@
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
-import styles from "../project.module.css";
+import styles from "./project.module.css";
+import Image from "next/image";
+import Link from "next/link";
+//import TechIcons from "@/components/TechIcons/TechIcons";
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const project = projects.find((p) => p.slug === params.slug);
