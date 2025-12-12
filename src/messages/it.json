@@ -1,0 +1,15 @@
+{
+  "nav": { "work": "Progetti", "about": "Su di me", "contact": "Contatto" },
+  "hero": {
+    "name": "Julia Paier",
+    "role": "Web Developer con mindset UX",
+    "desc": "Creo interfacce pulite e usabili, con attenzione a struttura, chiarezza e interazioni curate.",
+    "ctaWork": "Progetti selezionati",
+    "ctaContact": "Contatto"
+  },
+  "quote": "Vivere nella scoperta è sempre preferibile al vivere attraverso le supposizioni.",
+  "work": {
+    "title": "Progetti selezionati",
+    "intro": "Alcuni progetti che mostrano come penso, progetto e sviluppo."
+  }
+}

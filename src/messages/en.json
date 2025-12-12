@@ -1,0 +1,15 @@
+{
+  "nav": { "work": "Work", "about": "About", "contact": "Contact" },
+  "hero": {
+    "name": "Julia Paier",
+    "role": "UX-minded Web Developer",
+    "desc": "I build clean, usable interfaces with a focus on structure, clarity, and thoughtful interaction.",
+    "ctaWork": "View selected work",
+    "ctaContact": "Contact"
+  },
+  "quote": "Living in discovery is at all times preferable to living through assumptions.",
+  "work": {
+    "title": "Selected Work",
+    "intro": "A few projects that show how I think, design, and build."
+  }
+}

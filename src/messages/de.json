@@ -1,0 +1,15 @@
+{
+  "nav": { "work": "Projekte", "about": "Über mich", "contact": "Kontakt" },
+  "hero": {
+    "name": "Julia Paier",
+    "role": "UX-orientierte Web Developerin",
+    "desc": "Ich entwickle klare, nutzerfreundliche Interfaces – mit Fokus auf Struktur, Verständlichkeit und durchdachte Interaktion.",
+    "ctaWork": "Ausgewählte Projekte",
+    "ctaContact": "Kontakt"
+  },
+  "quote": "In Entdeckung zu leben ist jederzeit besser, als durch Annahmen zu leben.",
+  "work": {
+    "title": "Ausgewählte Projekte",
+    "intro": "Ein paar Projekte, die zeigen, wie ich denke, gestalte und entwickle."
+  }
+}

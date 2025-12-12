@@ -1,0 +1,30 @@
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--ink-65);
+}
+
+.languages,
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav a:hover {
+  color: var(--ink);
+}
+
+.active {
+  color: var(--ink);
+  font-weight: 600;
+}

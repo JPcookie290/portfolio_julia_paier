@@ -42,3 +42,126 @@
   border: 1px solid var(--ink-20);
   font-weight: 600;
 }
+
+.quoteSection {
+  background: var(--ink-bg-soft);
+  margin: 4rem 0;
+  padding: 4rem 2rem;
+}
+
+.quoteInner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quoteText {
+  font-size: 1.1rem;
+  color: var(--ink-80);
+  line-height: 1.6;
+}
+.quoteAuthor {
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+
+.workSection {
+  background: var(--ink);
+  color: rgba(255, 255, 255, 0.92);
+  padding: 5rem 2rem;
+}
+
+.workInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.workHeader {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.workTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  margin: 0;
+}
+
+.workIntro {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 60ch;
+  margin: 0;
+}
+
+/* cards */
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.card {
+  display: block;  
+  grid-column: span 12;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.04);
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.cardTitleRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  font-weight: 650;
+  margin: 0;
+}
+
+.cardMeta {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.cardDesc {
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 72ch;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* responsive: 2 columns on wider screens */
+@media (min-width: 860px) {
+  .card {
+    grid-column: span 6;
+  }
+}
+

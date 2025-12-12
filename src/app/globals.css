@@ -12,6 +12,7 @@
   --ink-40: rgba(50, 59, 76, 0.4);
   --ink-20: rgba(50, 59, 76, 0.2);
   --ink-12: rgba(50, 59, 76, 0.12);
+  --ink-bg-soft: rgba(50, 59, 76, 0.06);
 
   /* Fonts (wired via next/font) */
   --font-display: ui-serif, Georgia, serif;
