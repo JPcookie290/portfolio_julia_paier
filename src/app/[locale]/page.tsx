@@ -1,10 +1,13 @@
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import styles from "../page.module.css"; 
 import { projects } from "@/data/projects";
 import Link from "next/link";
 
+
 export default function Home() {
   const t = useTranslations();
+  const tProjects = useTranslations("projects");
+  const locale = useLocale();
 
   return (
     <main>
@@ -32,12 +35,12 @@ export default function Home() {
 
           <div className={styles.grid}>
             {projects.map((project) => (
-              <Link key={project.slug} href={`/projects/${project.slug}`} className={styles.card}>
+              <Link key={project.slug} href={`/${locale}/projects/${project.slug}`} className={styles.card}>
                 <div className={styles.cardTitleRow}>
-                  <h3 className={styles.cardTitle}>{project.title}</h3>
+                  <h3 className={styles.cardTitle}>{tProjects(`${project.slug}.title`)}</h3>
                   {project.year ? (<span className={styles.cardMeta}>{project.year}</span>) : null}
                 </div>
-                <p className={styles.cardDesc}>{project.description}</p>
+                <p className={styles.cardDesc}>{tProjects(`${project.slug}.description`)}</p>
                 <div className={styles.tags}>
                   {project.tags.map((tag) => (
                     <span key={tag} className={styles.tag}>

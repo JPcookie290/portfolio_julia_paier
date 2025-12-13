@@ -11,5 +11,40 @@
   "work": {
     "title": "Ausgewählte Projekte",
     "intro": "Ein paar Projekte, die zeigen, wie ich denke, gestalte und entwickle."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Wenn du zusammenarbeiten möchtest oder eine Frage hast, melde dich gerne.",
+    "emailLabel": "E-Mail",
+    "githubLabel": "GitHub",
+    "linkedinLabel": "LinkedIn"
+  },
+  "projects": {
+    "memory-game": {
+      "title": "Memory-Spiel",
+      "description": "Ein browserbasiertes Memory-Spiel mit Fokus auf Klarheit, Feedback und Barrierefreiheit.",
+      "overview": "Ich habe ein schnelles, zugängliches Memory-Spiel mit klarem Interaktionsfeedback entwickelt.",
+      "details": [
+        "Gestaltung einer klaren und gut lesbaren Oberfläche.",
+        "Implementierung nachvollziehbarer Spiellogik.",
+        "Fokus auf Tastaturbedienbarkeit."
+      ],
+      "images": {
+        "gameplay": "Hauptansicht des Spiels"
+      }
+    },
+
+    "swiftui-habit-tracker": {
+      "title": "SwiftUI Habit Tracker",
+      "description": "Eine ruhige App zur Stimmungs- und Gewohnheitsverfolgung mit SwiftUI.",
+      "overview": "Dieses Projekt untersucht, wie tägliche Gewohnheiten einfach und unaufdringlich erfasst werden können.",
+      "details": [
+        "Gestaltung eines ruhigen, minimalistischen Interfaces.",
+        "Umsetzung der Gewohnheitslogik.",
+        "Arbeit mit Navigation und State in SwiftUI."
+      ]
+    }
   }
 }
+
+

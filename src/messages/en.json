@@ -11,5 +11,42 @@
   "work": {
     "title": "Selected Work",
     "intro": "A few projects that show how I think, design, and build."
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "If you'd like to collaborate or have a question, feel free to reach out.",
+    "emailLabel": "Email",
+    "githubLabel": "GitHub",
+    "linkedinLabel": "LinkedIn"
+  },
+  "projects": {
+    "memory-game": {
+      "title": "Memory Game",
+      "description": "A browser-based memory game focused on clarity, feedback, and accessibility.",
+      "overview": "I built a fast, accessible memory game with a strong focus on interaction feedback and clean structure.",
+      "details": [
+        "Designed a clear and readable UI.",
+        "Implemented predictable game state logic.",
+        "Focused on keyboard accessibility."
+      ],
+      "images": {
+        "gameplay": "Main gameplay interface"
+      }
+    },
+
+    "swiftui-habit-tracker": {
+      "title": "SwiftUI Habit Tracker",
+      "description": "A calm mood and habit tracking app built with SwiftUI.",
+      "overview": "This project explores how small daily habits can be tracked in a simple, non-intrusive way.",
+      "details": [
+        "Designed a minimal and calm UI.",
+        "Implemented habit tracking logic.",
+        "Explored SwiftUI navigation and state handling."
+      ]
+    }
   }
 }
+
+
+
+

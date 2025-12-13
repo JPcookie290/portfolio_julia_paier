@@ -1,12 +1,17 @@
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
-import styles from "./project.module.css";
+import styles from "../project.module.css";
 import Image from "next/image";
 import Link from "next/link";
-//import TechIcons from "@/components/TechIcons/TechIcons";
+import TechIcons from "@/components/TechIcons/TechIcons";
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = projects.find((p) => p.slug === params.slug);
+export function generateStaticParams() {
+  return projects.map((p) => ({ slug: p.slug }));
+}
+
+export default async function ProjectPage({ params }: { params: Promise<{ slug: string }>; }) {
+  const { slug } = await params;
+  const project = projects.find((project) => project.slug === slug);
 
   if (!project) {
     notFound();
@@ -14,22 +19,66 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
   return (
     <main className={styles.wrap}>
-      <header className={styles.header}>
-        <h1 className={styles.title}>{project.title}</h1>
-        {project.year ? (<span className={styles.meta}>{project.year}</span>) : null}
-        <p className={styles.desc}>{project.description}</p>
-        <div className={styles.tags}>
-            {project.tags.map((tag) => (
-                <span key={tag} className={styles.tag}>{tag}</span>
-            ))}
+      <div className={styles.topBar}>
+        <Link href="/#work" className={styles.backLink} aria-label="Back to selected works">
+          <span className={styles.backArrow}>←</span>
+          Back to works
+        </Link>
+        <div className={styles.links}>
+          {project.githubUrl ? (
+            <a href={project.githubUrl} target="_blank" rel="noreferrer" className={styles.linkBtn}>
+              GitHub
+            </a>
+          ) : null}
+
+          {project.demoUrl ? (
+            <a href={project.demoUrl} target="_blank" rel="noreferrer" className={styles.linkBtnPrimary}>
+              Demo
+            </a>
+          ) : null}
         </div>
-      </header>
-      <section className={styles.selection}>
-          <h2 className={styles.h2}>Project Details</h2>
-          <p className={styles.p}>
-              /* TODO: Add Description */
-          </p>
+      </div>
+      {project.coverImage ? (
+        <figure className={styles.cover}>
+          <Image
+            src={project.coverImage.src}
+            alt={project.coverImage.alt}
+            width={1400}
+            height={900}
+            className={styles.coverImg}
+            priority
+          />
+        </figure>
+      ) : null}
+
+      <section className={styles.section}>
+        <h2 className={styles.h2}>Project details</h2>
+        <ul className={styles.list}>
+          {project.details.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
       </section>
+
+      {project.images?.length ? (
+        <section className={styles.section}>
+          <h2 className={styles.h2}>Images</h2>
+          <div className={styles.gallery}>
+            {project.images.map((img) => (
+              <figure key={img.src} className={styles.figure}>
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  width={1200}
+                  height={800}
+                  className={styles.galleryImg}
+                />
+                {img.caption ? <figcaption className={styles.caption}>{img.caption}</figcaption> : null}
+              </figure>
+            ))}
+          </div>
+        </section>
+      ) : null}
     </main>
   );
 }
