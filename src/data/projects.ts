@@ -18,7 +18,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/yourname/memory-game",
     coverImage: { src: "/projects/memory/cover.png", alt: "Memory game cover" },
     images: [
-      { src: "/projects/memory/screen-1.png", alt: "Gameplay screen", captionKey: "memory.images.gameplay" }
+      { src: "/projects/memory/screen-1.png", alt: "Gameplay screen", captionKey: "gameplay" }
     ]
   },
 

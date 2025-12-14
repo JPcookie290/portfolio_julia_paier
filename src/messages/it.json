@@ -12,13 +12,6 @@
     "title": "Progetti selezionati",
     "intro": "Alcuni progetti che mostrano come penso, progetto e sviluppo."
   },
-  "contact": {
-    "title": "Contatto",
-    "intro": "Se vuoi collaborare o hai una domanda, scrivimi pure.",
-    "emailLabel": "Email",
-    "githubLabel": "GitHub",
-    "linkedinLabel": "LinkedIn"
-  },
   "projects": {
     "memory-game": {
       "title": "Memory Game",
@@ -44,5 +37,67 @@
         "Gestione dello stato e della navigazione in SwiftUI."
       ]
     }
+  },
+  "navigation": {
+    "backToWork": "Torna ai progetti"
+  },
+  "projectsSection": {
+    "detailsTitle": "Dettagli del progetto",
+    "imagesTitle": "Immagini"
+  },
+  "about": {
+    "title": "Su di me",
+    "intro": "Sono Julia, una web developer con mindset UX e passione per la creazione di interfacce pulite e usabili. Credo che un buon design vada oltre l’estetica; si tratta di creare esperienze intuitive e piacevoli.",
+    "skillsTitle": "Competenze e tecnologie",
+    "skillGroups": [
+      {
+        "label": "Linguaggi di programmazione & strumenti",
+        "items": [
+          "Java",
+          "JavaScript (ES6+)",
+          "TypeScript",
+          "PHP",
+          "Python",
+          "Swift",
+          "Git & controllo versione"
+        ]
+      },
+      {
+        "label": "Sviluppo frontend & UI",
+        "items": [
+          "HTML5 & CSS3",
+          "React",
+          "Next.js",
+          "SwiftUI",
+          "Figma",
+          "Adobe Creative Cloud (Photoshop, Illustrator, InDesign)"
+        ]
+      },
+      {
+        "label": "Concetti & principi di programmazione",
+        "items": [
+          "Programmazione orientata agli oggetti (OOP)",
+          "Design pattern",
+          "Strutture dati & logica",
+          "Problem solving",
+          "Principi di clean code",
+          "Responsive design",
+          "Accessibilità (a11y)",
+          "Principi UI/UX"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contatto",
+    "intro": "Se vuoi collaborare o hai una domanda, scrivimi pure.",
+    "emailLabel": "Email",
+    "cvLabel": "Scarica CV",
+    "githubLabel": "GitHub",
+    "linkedinLabel": "LinkedIn"
+  },
+  "footer": {
+    "rights": "Tutti i diritti riservati.",
+    "madeBy": "Made by Julia Paier"
   }
 }

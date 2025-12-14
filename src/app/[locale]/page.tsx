@@ -2,6 +2,7 @@ import { useTranslations, useLocale } from "next-intl";
 import styles from "../page.module.css"; 
 import { projects } from "@/data/projects";
 import Link from "next/link";
+import ContactLinks from "@/components/ContactLinks/ContactLinks";
 
 
 export default function Home() {
@@ -54,7 +55,65 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Section */}
+      <section id="about" className={styles.aboutSection}>
+        <div className={styles.aboutInner}>
+          <h2 className={styles.sectionTitle}>{t("about.title")}</h2>
+          <p className={styles.aboutIntro}>{t("about.intro")}</p>
+        </div>
+     
+        <div className={styles.skillsBlock}>
+          <h3 className={styles.skillsTitle}>{t("about.skillsTitle")}</h3>
+
+          <div className={styles.skillColumns}>
+            {(t.raw("about.skillGroups") as { label: string; items: string[] }[]).map(
+              (group) => (
+                <div key={group.label} className={styles.skillColumn}>
+                  <h4 className={styles.skillColumnTitle}>{group.label}</h4>
+
+                  <ul className={styles.skillList}>
+                    {group.items.map((skill) => (
+                      <li key={skill} className={styles.skillListItem}>
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )
+            )}
+          </div>
+        </div>
+
+      </section>
+
       {/* Contact Section */}
+      <section id="contact" className={styles.contactSection}>
+        <div className={styles.contactInner}>
+          <h2 className={styles.contactTitle}>{t("contact.title")}</h2>
+          <p className={styles.contactIntro}>{t("contact.intro")}</p>
+
+          <ContactLinks
+            emailUser="julia.paier"
+            emailDomain="yahoo.com"
+            emailLabel={t("contact.emailLabel")}
+            cvLabel={t("contact.cvLabel")}
+            githubLabel={t("contact.githubLabel")}
+            linkedinLabel={t("contact.linkedinLabel")}
+            githubUrl="https://github.com/JPcookie290"
+            linkedinUrl="https://www.linkedin.com/in/julia-paier-489362183"
+            cvHref="/Lebenslauf_Julia_Paier.pdf"
+          />
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className={styles.footer}>
+        <div className={styles.footerInner}>
+          <span>© 2025 · {t("footer.rights")}</span>
+          <span>{t("footer.madeBy")}</span>
+        </div>
+      </footer>
+
     </main>
   );
 }

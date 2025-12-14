@@ -1,12 +1,23 @@
+"use client";
+
 import Link from "next/link";
-import {useLocale} from "next-intl";
+import {useLocale, useTranslations} from "next-intl";
+import { usePathname, useSearchParams } from "next/navigation";
 import styles from "./Nav.module.css";
 
 export default function Nav() {
   const locale = useLocale();
+  const t = useTranslations("navigation");
+
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const currentSearch = searchParams.toString();
+  const searchSuffix = currentSearch ? `?${currentSearch}` : "";
 
   const languages = ["en", "de", "it"] as const;
   const menu = ["work", "about", "contact"] as const;
+
+  const restPath = pathname.replace(/^\/(en|de|it)/, "") || "/";
 
   return (
     <nav className={styles.nav}>
@@ -15,7 +26,7 @@ export default function Nav() {
         {languages.map((lng) => (
           <Link
             key={lng}
-            href={`/${lng}`}
+            href={`/${lng}${restPath}${searchSuffix}`}
             className={lng === locale ? styles.active : ""}
           >
             {lng.toUpperCase()}

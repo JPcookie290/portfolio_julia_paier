@@ -12,13 +12,6 @@
     "title": "Selected Work",
     "intro": "A few projects that show how I think, design, and build."
   },
-  "contact": {
-    "title": "Contact",
-    "intro": "If you'd like to collaborate or have a question, feel free to reach out.",
-    "emailLabel": "Email",
-    "githubLabel": "GitHub",
-    "linkedinLabel": "LinkedIn"
-  },
   "projects": {
     "memory-game": {
       "title": "Memory Game",
@@ -44,9 +37,70 @@
         "Explored SwiftUI navigation and state handling."
       ]
     }
+  },
+  "navigation": {
+    "backToWork": "Back to work"
+  },
+  "projectsSection": {
+    "detailsTitle": "Project details",
+    "imagesTitle": "Images"
+  },
+  "about": {
+    "title": "About Me",
+    "intro": "I'm Julia, a UX-minded web developer with a passion for creating clean, usable interfaces. I believe that good design is about more than just aesthetics; it's about crafting experiences that are intuitive and enjoyable.",
+    "skillsTitle": "Skills & Technologies",
+    "skillGroups": [
+      {
+        "label": "Programming Languages & Tools",
+        "items": [
+          "Java",
+          "JavaScript (ES6+)",
+          "TypeScript",
+          "PHP",
+          "Python",
+          "Swift",
+          "Git & Version Control"
+        ]
+      },
+      {
+        "label": "Frontend Development & UI",
+        "items": [
+          "HTML5 & CSS3",
+          "React",
+          "Next.js",
+          "SwiftUI",
+          "Figma",
+          "Adobe Creative Cloud (Photoshop, Illustrator, InDesign)"
+        ]
+      },
+      {
+        "label": "Programming Concepts & Principles",
+        "items": [
+          "Object-Oriented Programming (OOP)",
+          "Design Patterns",
+          "Data Structures & Logic",
+          "Problem Solving",
+          "Clean Code Principles",
+          "Responsive Design",
+          "Accessibility (a11y)",
+          "UI/UX Principles"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "If you'd like to collaborate or have a question, feel free to reach out.",
+    "emailLabel": "Email",
+    "cvLabel": "Download CV",
+    "githubLabel": "GitHub",
+    "linkedinLabel": "LinkedIn"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "madeBy": "Made by Julia Paier"
   }
 }
-
 
 
 
