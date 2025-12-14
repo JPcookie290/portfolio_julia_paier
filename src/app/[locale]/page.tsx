@@ -106,14 +106,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className={styles.footer}>
-        <div className={styles.footerInner}>
-          <span>© 2025 · {t("footer.rights")}</span>
-          <span>{t("footer.madeBy")}</span>
-        </div>
-      </footer>
-
     </main>
   );
 }

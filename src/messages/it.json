@@ -14,28 +14,21 @@
   },
   "projects": {
     "memory-game": {
-      "title": "Memory Game",
-      "description": "Un gioco di memoria nel browser con attenzione a chiarezza, feedback e accessibilità.",
-      "overview": "Ho sviluppato un memory game veloce e accessibile, con feedback chiaro e struttura pulita.",
+      "title": "Pokémon Memory Card Game",
+      "description": "Il Pokémon Memory Card Game (Gioco di memoria Pokémon) è un’applicazione web interattiva progettata per mettere alla prova memoria, concentrazione e attenzione ai dettagli, il tutto con un divertente e nostalgico tema Pokémon. I giocatori devono cliccare su carte Pokémon diverse senza selezionare la stessa due volte. Ogni scelta mescola nuovamente la griglia, aumentando la difficoltà e la rigiocabilità. Il gioco tiene traccia del punteggio attuale e del punteggio più alto del giocatore, incoraggiando il miglioramento a ogni partita.",
+      "overview": "Questo progetto dimostra solide competenze nello sviluppo frontend moderno utilizzando React, TypeScript e Vite. Si collega all’API PokéAPI per ottenere dinamicamente i dati dei Pokémon, mostrando sprite e nomi per migliorare l’esperienza visiva. Il design si concentra su una gestione pulita dello stato, rendering efficienti e cicli di feedback interattivi. Con questo progetto ho approfondito l’uso degli hook di React per la gestione dello stato, la riusabilità dei componenti e l’ottimizzazione del recupero dati—tutti elementi essenziali per creare applicazioni web scalabili e performanti.",
       "details": [
-        "Progettazione di un'interfaccia chiara e leggibile.",
-        "Implementazione della logica di gioco.",
-        "Attenzione all’accessibilità da tastiera."
+        "Sviluppato con React, TypeScript e Vite per un ambiente frontend rapido e modulare.",
+        "Collegato alla PokéAPI per ottenere dinamicamente dati sui Pokémon, inclusi nomi e sprite.",
+        "Implementata logica personalizzata di mescolamento e punteggio utilizzando gli hook di React per aggiornamenti in tempo reale.",
+        "Ottimizzata la gestione dello stato per ridurre i rendering non necessari e migliorare le prestazioni.",
+        "Architettura progettata per la scalabilità, con chiara separazione tra componenti UI e logica applicativa.",
+        "Configurati ESLint e TypeScript per garantire qualità, coerenza e manutenibilità del codice.",
+        "Ottimizzato per dispositivi desktop e mobili per un’esperienza di gioco fluida e reattiva."
       ],
       "images": {
-        "gameplay": "Interfaccia principale del gioco"
+        "gameplay": "Interfaccia di gioco principale"
       }
-    },
-
-    "swiftui-habit-tracker": {
-      "title": "SwiftUI Habit Tracker",
-      "description": "Un’app semplice per tracciare abitudini e stati d’animo, realizzata con SwiftUI.",
-      "overview": "Questo progetto esplora come monitorare abitudini quotidiane in modo semplice e non invasivo.",
-      "details": [
-        "Design minimal e rilassante.",
-        "Implementazione della logica delle abitudini.",
-        "Gestione dello stato e della navigazione in SwiftUI."
-      ]
     }
   },
   "navigation": {

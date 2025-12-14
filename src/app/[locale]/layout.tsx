@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Nav from "@/components/Nav/Nav";
+import Footer from "@/components/Footer/Footer";
 
 
 export default async function LocaleLayout({
@@ -26,6 +27,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Nav />
           {children}
+          <Footer />
         </NextIntlClientProvider>
   );
 }

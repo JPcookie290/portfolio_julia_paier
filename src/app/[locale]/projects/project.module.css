@@ -1,33 +1,54 @@
 .wrap {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 4rem 2rem 6rem;
+  padding: 2.25rem 2rem 6rem;
 }
 
-.header {
+.projectHeader {
+  max-width: 980px;     /* allows wider text on desktop */
+  margin: 0 auto 2rem;  /* center it */
   display: grid;
   gap: 1rem;
-  margin-bottom: 2.5rem;
+}
+
+.titleRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap; /* allows stacking on small screens */
 }
 
 .title {
-  font-family: var(--font-display);
-  font-size: clamp(2.2rem, 4vw, 3.4rem);
-  line-height: 1.05;
   margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
 }
+
+.year {
+  margin: 0;
+  color: var(--ink-65);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.desc {
+  margin: 0;
+  color: var(--ink-80);
+  font-size: 1.05rem;
+  line-height: 1.6;
+
+  /* readable line length */
+  max-width: 110ch;
+}
+
 
 .meta {
   color: var(--ink-65);
   margin: 0;
 }
 
-.desc {
-  color: var(--ink-80);
-  max-width: 70ch;
-  margin: 0;
-  font-size: 1.1rem;
-}
 
 .tags {
   display: flex;
@@ -49,13 +70,119 @@
   border-top: 1px solid var(--ink-12);
 }
 
-.h2 {
-  font-family: var(--font-display);
-  margin: 0 0 0.75rem;
-}
-
 .p {
   margin: 0;
   color: var(--ink-80);
   max-width: 75ch;
+}
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 2.5rem;
+  gap: 1rem;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+
+  color: var(--ink-70);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.backLink:hover {
+  color: var(--ink);
+}
+
+.backArrow {
+  font-size: 1.1em;
+}
+
+.actionLinks {
+  display: flex;
+  gap: 0.6rem;
+}
+
+/* neutral button */
+.actionLink {
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--ink-20);
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* primary action (Demo) */
+.actionLinkPrimary {
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  background: var(--ink);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.actionLink:hover {
+  border-color: var(--ink-40);
+}
+
+.actionLinkPrimary:hover {
+  opacity: 0.9;
+}
+.cover {
+  max-width: 1100px;  /* same as your text/header container */
+  margin: 0 auto 2.5rem;
+}
+
+.coverImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  border: 1px solid var(--ink-12);
+}
+/* “band” section like footer */
+.detailsSection {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 2.5rem 0;
+  background: rgba(50, 59, 76, 0.03); /* subtle, footer-ish */
+  border-top: 1px solid var(--ink-12);
+  border-bottom: 1px solid var(--ink-12);
+}
+
+/* keep it aligned with your content width */
+.detailsInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.h2 {
+  font-family: var(--font-display);
+  margin: 0 0 1rem;
+}
+
+.list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--ink-80);
+  display: grid;
+  gap: 0.5rem;
+}
+.techSection {
+  padding: 2rem 0 0;
+}
+
+.techInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }

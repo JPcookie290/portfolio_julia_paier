@@ -45,13 +45,13 @@
 
 .quoteSection {
   background: var(--ink-bg-soft);
-  margin: 4rem 0;
-  padding: 4rem 2rem;
+  margin: 0;
+  padding: 2.5rem 2rem;
 }
 
 .quoteInner {
-  max-width: 680px;
-  margin: 0 auto;
+  max-width: fit-content;
+  margin:  auto;
   text-align: center;
 }
 
@@ -172,7 +172,7 @@
 .aboutInner {
   max-width: 1100px;
   margin: 0 auto;
-  display: grid;
+  /* display: grid; */
   gap: 2rem;
 }
 
@@ -184,15 +184,18 @@
 
 .aboutIntro {
   color: var(--ink-80);
-  max-width: 75ch;
+  max-width: 72ch; /* changed from 75ch to 72ch */
   font-size: 1.05rem;
   margin: 0;
 }
 
 .skillsBlock {
   margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   border-top: 1px solid var(--ink-12);
   padding-top: 2rem;
+  max-width: 80%;
 }
 
 .skillsTitle {
@@ -231,6 +234,7 @@
   display: grid;
   gap: 2.5rem;
   margin-top: 1.5rem;
+  max-width: fit-content;
 }
 
 @media (min-width: 900px) {
@@ -243,11 +247,19 @@
   padding: 1.5rem;
   border-radius: 16px;
   border: 1px solid var(--ink-12);
-  background: transparent;
+  background: rgba(50, 59, 76, 0.03);
 
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+
+  transition: box-shadow 140ms ease, border-color 140ms ease, transform 140ms ease;
+}
+
+.skillColumn:hover {
+  border-color: var(--ink-20);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
 }
 
 .skillColumnTitle {
@@ -271,6 +283,7 @@
 }
 
 .contactSection {
+  background-color: var(--ink-20);
   padding: 5rem 2rem 3rem;
 }
 
@@ -301,6 +314,7 @@
 }
 
 .contactLink {
+  background-color: white;
   padding: 0.65rem 1rem;
   border-radius: 999px;
   border: 1px solid var(--ink-20);
@@ -310,23 +324,4 @@
 
 .contactLink:hover {
   border-color: var(--ink-40);
-}
-
-.footer {
-  padding: 2rem 2rem 3rem;
-}
-
-.footerInner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 0.75rem 1.5rem;
-
-  border-top: 1px solid var(--ink-12);
-  padding-top: 1.5rem;
-
-  font-size: 0.95rem;
-  color: var(--ink-65);
 }

@@ -20,28 +20,30 @@ export default function Nav() {
   const restPath = pathname.replace(/^\/(en|de|it)/, "") || "/";
 
   return (
-    <nav className={styles.nav}>
-      {/* Language switch – left */}
-      <div className={styles.languages}>
-        {languages.map((lng) => (
-          <Link
-            key={lng}
-            href={`/${lng}${restPath}${searchSuffix}`}
-            className={lng === locale ? styles.active : ""}
-          >
-            {lng.toUpperCase()}
-          </Link>
-        ))}
-      </div>
+    <header className="styles.headerStyle">
+      <nav className={styles.nav}>
+        {/* Language switch – left */}
+        <div className={styles.languages}>
+          {languages.map((lng) => (
+            <Link
+              key={lng}
+              href={`/${lng}${restPath}${searchSuffix}`}
+              className={lng === locale ? styles.active : ""}
+            >
+              {lng.toUpperCase()}
+            </Link>
+          ))}
+        </div>
 
-      {/* Menu – right */}
-      <div className={styles.menu}>
-        {menu.map((item) => (
-          <a key={item} href={`#${item}`}>
-            {item.charAt(0).toUpperCase() + item.slice(1)}
-          </a>
-        ))}
-      </div>
-    </nav>
+        {/* Menu – right */}
+        <div className={styles.menu}>
+          {menu.map((item) => (
+            <a key={item} href={`#${item}`}>
+              {item.charAt(0).toUpperCase() + item.slice(1)}
+            </a>
+          ))}
+        </div>
+      </nav>
+    </header>
   );
 }

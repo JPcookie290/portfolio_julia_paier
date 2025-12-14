@@ -14,32 +14,25 @@
   },
   "projects": {
     "memory-game": {
-      "title": "Memory Game",
-      "description": "A browser-based memory game focused on clarity, feedback, and accessibility.",
-      "overview": "I built a fast, accessible memory game with a strong focus on interaction feedback and clean structure.",
+      "title": "Pokémon Memory Card Game",
+      "description": "The Pokémon Memory Card Game is an interactive web application built to test memory, focus, and attention to detail through a fun and nostalgic Pokémon theme. Players must click on unique Pokémon cards without selecting the same one twice. Each selection reshuffles the entire grid, increasing both challenge and replayability. The game tracks the player’s current and highest scores, encouraging improvement with every session.",
+      "overview": "This project demonstrates strong skills in modern frontend development using React, TypeScript, and Vite. It connects to the PokéAPI to dynamically fetch Pokémon data, displaying both sprites and names to enhance the visual experience. The design focuses on clean state management, efficient re-renders, and interactive feedback loops. Through this project, I explored the use of hooks for state handling, component reusability, and data fetching optimizations—all crucial for building scalable, performant web applications.",
       "details": [
-        "Designed a clear and readable UI.",
-        "Implemented predictable game state logic.",
-        "Focused on keyboard accessibility."
+      "Developed using React, TypeScript, and Vite for a fast and modular frontend environment.",
+      "Connected to the PokéAPI to dynamically fetch Pokémon data including names and sprites.",
+      "Implemented custom shuffle and scoring logic using React hooks for real-time updates.",
+      "Focused on efficient state management, minimizing unnecessary re-renders and ensuring performance.",
+      "Structured project architecture for scalability, with clear separation of UI components and logic.",
+      "Configured ESLint and TypeScript for code quality, consistency, and maintainability.",
+      "Optimized for both desktop and mobile devices to ensure responsive gameplay."
       ],
       "images": {
         "gameplay": "Main gameplay interface"
       }
-    },
-
-    "swiftui-habit-tracker": {
-      "title": "SwiftUI Habit Tracker",
-      "description": "A calm mood and habit tracking app built with SwiftUI.",
-      "overview": "This project explores how small daily habits can be tracked in a simple, non-intrusive way.",
-      "details": [
-        "Designed a minimal and calm UI.",
-        "Implemented habit tracking logic.",
-        "Explored SwiftUI navigation and state handling."
-      ]
     }
   },
   "navigation": {
-    "backToWork": "Back to work"
+    "backToWork": "Back to projects"
   },
   "projectsSection": {
     "detailsTitle": "Project details",

@@ -32,35 +32,43 @@ export default async function ProjectPage({
       <div className={styles.topBar}>
         <Link href="../#work" className={styles.backLink}>
           <span className={styles.backArrow}>←</span>
-          {tNav("backToWork")}
+          Back to work
         </Link>
 
-        <div className={styles.links}>
+        <div className={styles.actionLinks}>
           {project.githubUrl ? (
-            <a href={project.githubUrl} target="_blank" rel="noreferrer" className={styles.linkBtn}>
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+              className={styles.actionLink}
+            >
               GitHub
             </a>
           ) : null}
 
           {project.demoUrl ? (
-            <a href={project.demoUrl} target="_blank" rel="noreferrer" className={styles.linkBtnPrimary}>
+            <a
+              href={project.demoUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+              className={styles.actionLinkPrimary}
+            >
               Demo
             </a>
           ) : null}
         </div>
       </div>
 
-      <header className={styles.header}>
-        <h1 className={styles.title}>{tProject("title")}</h1>
-        {project.year ? <p className={styles.meta}>{project.year}</p> : null}
-        <p className={styles.desc}>{tProject("overview")}</p>
+      <header className={styles.projectHeader}>
+        <div className={styles.titleRow}>
+          <h1 className={styles.title}>{tProject("title")}</h1>
+          {project.year ? <p className={styles.year}>{project.year}</p> : null}
+        </div>
 
-        {project.tech?.length ? (
-          <div className={styles.techRow}>
-            <TechIcons tech={project.tech} />
-          </div>
-        ) : null}
+        <p className={styles.desc}>{tProject("overview")}</p>
       </header>
+
 
       {project.coverImage ? (
         <figure className={styles.cover}>
@@ -75,14 +83,26 @@ export default async function ProjectPage({
         </figure>
       ) : null}
 
-      <section className={styles.section}>
-        <h2 className={styles.h2}>{tSection("detailsTitle")}</h2>
-        <ul className={styles.list}>
-          {details.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
+      <section className={styles.detailsSection}>
+        <div className={styles.detailsInner}>
+          <h2 className={styles.h2}>{tSection("detailsTitle")}</h2>
+
+          <ul className={styles.list}>
+            {details.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
       </section>
+
+      {project.tech?.length ? (
+        <section className={styles.techSection}>
+          <div className={styles.techInner}>
+            <TechIcons tech={project.tech} />
+          </div>
+        </section>
+      ) : null}
+
 
       {project.images?.length ? (
         <section className={styles.section}>
