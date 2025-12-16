@@ -20,7 +20,7 @@ export default function Nav() {
   const restPath = pathname.replace(/^\/(en|de|it)/, "") || "/";
 
   return (
-    <header className="styles.headerStyle">
+    <header className={styles.headerStyle}>
       <nav className={styles.nav}>
         {/* Language switch – left */}
         <div className={styles.languages}>

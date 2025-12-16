@@ -4,6 +4,7 @@ import styles from "../project.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import TechIcons from "@/components/TechIcons/TechIcons";
+import LightboxGallery from "@/components/LightboxGallery/LightboxGallery";
 import { getTranslations } from "next-intl/server";
 
 export function generateStaticParams() {
@@ -28,35 +29,40 @@ export default async function ProjectPage({
   const details = tProject.raw("details") as string[];
 
   return (
-    <main className={styles.wrap}>
+    <main className={styles.page}>
+      <div className={styles.container}>
+
       <div className={styles.topBar}>
-        <Link href="../#work" className={styles.backLink}>
-          <span className={styles.backArrow}>←</span>
-          Back to work
-        </Link>
+        <div className={styles.topBarInner}>
 
-        <div className={styles.actionLinks}>
-          {project.githubUrl ? (
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noreferrer noopener"
-              className={styles.actionLink}
-            >
-              GitHub
-            </a>
-          ) : null}
+          <Link href="../#work" className={styles.backLink}>
+            <span className={styles.backArrow}>←</span>
+            Back to work
+          </Link>
 
-          {project.demoUrl ? (
-            <a
-              href={project.demoUrl}
-              target="_blank"
-              rel="noreferrer noopener"
-              className={styles.actionLinkPrimary}
-            >
-              Demo
-            </a>
-          ) : null}
+          <div className={styles.actionLinks}>
+            {project.githubUrl ? (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noreferrer noopener"
+                className={styles.actionLink}
+              >
+                GitHub
+              </a>
+            ) : null}
+
+            {project.demoUrl ? (
+              <a
+                href={project.demoUrl}
+                target="_blank"
+                rel="noreferrer noopener"
+                className={styles.actionLinkPrimary}
+              >
+                Demo
+              </a>
+            ) : null}
+        </div>
         </div>
       </div>
 
@@ -105,22 +111,15 @@ export default async function ProjectPage({
 
 
       {project.images?.length ? (
-        <section className={styles.section}>
-          <h2 className={styles.h2}>{tSection("imagesTitle")}</h2>
-          <div className={styles.gallery}>
-            {project.images.map((img) => (
-              <figure key={img.src} className={styles.figure}>
-                <Image src={img.src} alt={img.alt} width={1200} height={800} className={styles.galleryImg} />
-                {img.captionKey ? (
-                  <figcaption className={styles.caption}>
-                    {tProject(`images.${img.captionKey}`)}
-                  </figcaption>
-                ) : null}
-              </figure>
-            ))}
+        <section className={styles.gallerySection}>
+          <div className={styles.galleryInner}>
+            <h2 className={styles.h2}>{tSection("imagesTitle")}</h2>
+            <LightboxGallery images={project.images} projectSlug={project.slug} />
           </div>
         </section>
       ) : null}
+      </div>
+
     </main>
   );
 }

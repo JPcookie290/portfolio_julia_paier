@@ -44,10 +44,10 @@
         "Documentati possibili miglioramenti futuri come animazioni, IA migliorata e supporto multigiocatore."
       ],
       "images": {
-        "gameplay": "Interfaccia di gioco principale",
-        "gameplay1": "Screenshot 1 del gioco Battaglia Navale",
-        "gameplay2": "Screenshot 2 del gioco Battaglia Navale",
-        "codeStructure": "Struttura del codice e diagramma delle classi"
+        "startScreen": "Schermata iniziale con selezione della difficoltà e campo per inserire il nome.",
+        "gameplay": "Interfaccia di gioco principale che mostra le griglie del giocatore e del computer. Grigio: navi posizionate, Arancione: colpi a segno, Rosso: navi affondate, Blu scuro: colpi mancati.",
+        "gameController": "Esempio di codice: inizio della classe Game Controller che gestisce il flusso di gioco.",
+        "computerShot": "Esempio di codice: turno del computer che seleziona un bersaglio sulla griglia del giocatore."
       }
     }
   },

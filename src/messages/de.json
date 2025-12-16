@@ -44,10 +44,10 @@
         "Mögliche zukünftige Erweiterungen wie Animationen, verbesserte KI und Mehrspieler-Unterstützung dokumentiert."
       ],
       "images": {
-        "gameplay": "Haupt-Spieloberfläche",
-        "gameplay1": "Battleship-Spiel Screenshot 1",
-        "gameplay2": "Battleship-Spiel Screenshot 2",
-        "codeStructure": "Codestruktur und Klassendiagramm"
+        "startScreen": "Startbildschirm mit Schwierigkeitsauswahl und Namenseingabe.",
+        "gameplay": "Haupt-Spieloberfläche mit dem Raster des Spielers und des Computers. Grau: platzierte Schiffe, Orange: Treffer, Rot: versenkte Schiffe, Dunkelblau: Fehlschüsse.",
+        "gameController": "Codebeispiel: Beginn der Game-Controller-Klasse, die den Spielablauf steuert.",
+        "computerShot": "Codebeispiel: Zug des Computers, bei dem ein Ziel auf dem Spielfeld des Spielers ausgewählt wird."
       }
     }
   },

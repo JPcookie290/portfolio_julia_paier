@@ -44,10 +44,10 @@
         "Documented potential future improvements such as animations, improved AI, and multiplayer support."
       ],
       "images": {
-        "gameplay": "Main gameplay interface",
-        "gameplay1": "Battle Ship game screenshot 1",
-        "gameplay2": "Battle Ship game screenshot 2",
-        "codeStructure": "Code structure and class diagram"
+        "startScreen": "Start screen with difficulty selection and name input.",
+        "gameplay": "Main game interface showing the player's and computer's grids. Grey: Ships placed, Orange: Hits, Red: Ships sunk, Dark Blue: Misses.",
+        "gameController": "Code Example: Start of the Game Controller class handling game flow.",
+        "computerShot": "Code Example: Computer's turn selecting a target on the player's grid."
       }
     }
   },

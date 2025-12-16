@@ -1,3 +1,303 @@
+/* ---------- layout system ---------- */
+.container {
+  width: min(1100px, 92vw);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 2rem);
+}
+
+/* optional: tighter content measure for reading */
+.measure {
+  max-width: 72ch;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  padding: 6rem 0 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.name {
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  font-weight: 700;
+}
+
+.role {
+  font-size: 1.4rem;
+  color: var(--ink-80);
+}
+
+.description {
+  max-width: 52ch;
+  font-size: 1.05rem;
+  color: var(--ink-65);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.primary {
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  background: var(--ink);
+  color: white;
+  font-weight: 600;
+}
+
+.secondary {
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--ink-20);
+  font-weight: 600;
+}
+
+/* ---------- QUOTE ---------- */
+.quoteSection {
+  background: var(--ink-bg-soft);
+  margin: 0;
+  padding: 2.5rem 0;
+}
+
+/* slightly narrower than full container, but still fluid */
+.quoteInner {
+  width: min(980px, 92vw);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 2rem);
+  text-align: center;
+}
+
+.quoteText {
+  font-size: 1.1rem;
+  color: var(--ink-80);
+  line-height: 1.6;
+}
+
+.quoteAuthor {
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+
+/* ---------- WORK ---------- */
+.workSection {
+  background: var(--ink);
+  color: rgba(255, 255, 255, 0.92);
+  padding: 5rem 0;
+}
+
+.workHeader {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.workTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  margin: 0;
+}
+
+.workIntro {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 60ch;
+  margin: 0;
+}
+
+/* cards grid */
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.card {
+  display: block;
+  grid-column: span 12;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.04);
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.cardTitleRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  font-weight: 650;
+  margin: 0;
+}
+
+.cardMeta {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.cardDesc {
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 72ch;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media (min-width: 860px) {
+  .card {
+    grid-column: span 6;
+  }
+}
+
+/* ---------- ABOUT ---------- */
+.aboutSection {
+  padding: 5rem 0;
+}
+
+.aboutInner {
+  display: grid;
+  gap: 2rem;
+}
+
+.aboutTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin: 0;
+}
+
+.aboutIntro {
+  color: var(--ink-80);
+  max-width: 72ch;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* skills */
+.skillsBlock {
+  margin-top: 2rem;
+  border-top: 1px solid var(--ink-12);
+  padding-top: 2rem;
+}
+
+.skillsTitle {
+  font-weight: 650;
+  margin: 0 0 1rem;
+  color: var(--ink);
+}
+
+.skillColumns {
+  width: 100%;
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .skillColumns {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.5rem;
+  }
+}
+
+.skillColumn {
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid var(--ink-12);
+  background: rgba(50, 59, 76, 0.03);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  transition: box-shadow 140ms ease, border-color 140ms ease, transform 140ms ease;
+}
+
+.skillColumn:hover {
+  border-color: var(--ink-20);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.skillColumnTitle {
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0;
+}
+
+.skillList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.skillListItem {
+  color: var(--ink-80);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* ---------- CONTACT ---------- */
+.contactSection {
+  background: var(--ink-20);
+  padding: 5rem 0 3rem;
+}
+
+.contactInner {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.contactTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin: 0;
+}
+
+.contactIntro {
+  margin: 0;
+  color: var(--ink-80);
+  max-width: 70ch;
+}
+
+
+
+/* Old CSS file - do not use */
+/*
+.container {
+  width: min(1100px, 92vw);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 2rem);
+}
+
 .hero {
   max-width: 1100px;
   margin: 0 auto;
@@ -50,8 +350,8 @@
 }
 
 .quoteInner {
-  max-width: fit-content;
-  margin:  auto;
+  width: min(980px, 92vw);   
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -95,7 +395,7 @@
   margin: 0;
 }
 
-/* cards */
+
 .grid {
   display: grid;
   gap: 1rem;
@@ -158,7 +458,6 @@
   color: rgba(255, 255, 255, 0.75);
 }
 
-/* responsive: 2 columns on wider screens */
 @media (min-width: 860px) {
   .card {
     grid-column: span 6;
@@ -172,7 +471,6 @@
 .aboutInner {
   max-width: 1100px;
   margin: 0 auto;
-  /* display: grid; */
   gap: 2rem;
 }
 
@@ -184,18 +482,19 @@
 
 .aboutIntro {
   color: var(--ink-80);
-  max-width: 72ch; /* changed from 75ch to 72ch */
+  max-width: 72ch; 
   font-size: 1.05rem;
   margin: 0;
 }
 
 .skillsBlock {
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 2rem;
   border-top: 1px solid var(--ink-12);
   padding-top: 2rem;
-  max-width: 80%;
+
+  width: min(1100px, 92vw);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skillsTitle {
@@ -230,11 +529,12 @@
   color: var(--ink);
   margin-bottom: 0.9rem;
 }
+
 .skillColumns {
+  width: 100%;
   display: grid;
   gap: 2.5rem;
   margin-top: 1.5rem;
-  max-width: fit-content;
 }
 
 @media (min-width: 900px) {
@@ -283,7 +583,7 @@
 }
 
 .contactSection {
-  background-color: var(--ink-20);
+  background: var(--ink-bg-soft);
   padding: 5rem 2rem 3rem;
 }
 
@@ -325,3 +625,4 @@
 .contactLink:hover {
   border-color: var(--ink-40);
 }
+ */

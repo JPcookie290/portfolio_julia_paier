@@ -1,7 +1,7 @@
 .headerStyle {
   width: 100%;
   background: rgba(50, 59, 76, 0.04);
-  border-bottom: 1px solid var(--ink_65);
+  border-bottom: 1px solid var(--ink-65);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
 }
 

@@ -1,11 +1,11 @@
-.wrap {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2.25rem 2rem 6rem;
+.page {
+  padding: 0 0 0;
 }
 
+
+
 .projectHeader {
-  max-width: 980px;     /* allows wider text on desktop */
+  max-width: 1100px;     /* allows wider text on desktop */
   margin: 0 auto 2rem;  /* center it */
   display: grid;
   gap: 1rem;
@@ -76,12 +76,23 @@
   max-width: 75ch;
 }
 .topBar {
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   margin-bottom: 2.5rem;
   gap: 1rem;
+  padding: 1rem 1rem 1rem;
+  background-color: var(--ink-12);
+}
+.topBarInner {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .backLink {
@@ -112,6 +123,7 @@
   padding: 0.45rem 0.85rem;
   border-radius: 999px;
   border: 1px solid var(--ink-20);
+  background-color: var(--bg);
   text-decoration: none;
   color: var(--ink);
   font-weight: 600;
@@ -153,9 +165,10 @@
   width: 100%;
   margin-top: 3rem;
   padding: 2.5rem 0;
-  background: rgba(50, 59, 76, 0.03); /* subtle, footer-ish */
+  background: var(--ink); /* subtle, footer-ish */
   border-top: 1px solid var(--ink-12);
   border-bottom: 1px solid var(--ink-12);
+  color: rgba(255, 255, 255, 0.92);
 }
 
 /* keep it aligned with your content width */
@@ -173,16 +186,73 @@
 .list {
   margin: 0;
   padding-left: 1.2rem;
-  color: var(--ink-80);
   display: grid;
   gap: 0.5rem;
 }
 .techSection {
-  padding: 2rem 0 0;
+  padding: 1rem 0 1rem;
+  background-color: var(--ink);
 }
 
 .techInner {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+.gallerySection {
+  padding: 2.5rem 0 4rem;
+}
+
+.galleryInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.galleryGrid {
+  margin-top: 1.25rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+  .galleryGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1080px) {
+  .galleryGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.galleryItem {
+  margin: 0;
+}
+
+.galleryButton {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  width: 100%;
+  cursor: zoom-in;
+  text-align: left;
+}
+
+.galleryImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  border: 1px solid var(--ink-12);
+}
+
+.caption {
+  margin-top: 0.55rem;
+  color: var(--ink-70);
+  font-size: 0.92rem;
+  line-height: 1.35;
+  max-width: 60ch;
 }
