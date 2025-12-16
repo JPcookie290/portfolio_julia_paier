@@ -29,6 +29,26 @@
       "images": {
         "gameplay": "Main gameplay interface"
       }
+    },
+    "battle-ship-java": {
+      "title": "Battleship Game",
+      "description": "The Battleship Game is a classic player-versus-computer strategy game where the goal is to sink all of the opponent’s ships before they sink yours. Players can place ships manually or randomize their positions and then take turns firing at the enemy grid through an intuitive graphical interface.",
+      "overview": "This project showcases object-oriented design in Java combined with a graphical user interface to deliver an interactive game experience. It features configurable difficulty levels, manual or random ship placement, and clearly defined game flow from setup to win condition. The implementation emphasizes encapsulated game logic, turn-based mechanics, and user-friendly controls such as reset and start buttons.",
+      "details": [
+        "Implemented core Battleship mechanics in Java using object-oriented principles for ships, boards, and game flow.",
+        "Created a graphical gameboard interface that allows players to place ships, start the game, and select targets visually.",
+        "Added both Easy and Normal difficulty modes to adjust the computer opponent’s behavior.",
+        "Supported manual and random ship placement so players can choose their preferred setup style.",
+        "Included reset and start controls to quickly restart matches or re-randomize ship positions.",
+        "Designed turn-based player versus computer gameplay, alternating moves until one fleet is completely destroyed.",
+        "Documented potential future improvements such as animations, improved AI, and multiplayer support."
+      ],
+      "images": {
+        "gameplay": "Main gameplay interface",
+        "gameplay1": "Battle Ship game screenshot 1",
+        "gameplay2": "Battle Ship game screenshot 2",
+        "codeStructure": "Code structure and class diagram"
+      }
     }
   },
   "navigation": {

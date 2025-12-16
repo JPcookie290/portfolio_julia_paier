@@ -29,6 +29,26 @@
       "images": {
         "gameplay": "Interfaccia di gioco principale"
       }
+    },
+    "battle-ship-java": {
+      "title": "Gioco Battaglia Navale",
+      "description": "Il Gioco Battaglia Navale è un classico gioco di strategia giocatore-contro-computer in cui l’obiettivo è affondare tutte le navi dell’avversario prima che vengano distrutte le tue. I giocatori possono posizionare manualmente le proprie navi oppure randomizzarne le posizioni e poi alternarsi nel colpire la griglia nemica tramite un’intuitiva interfaccia grafica.",
+      "overview": "Questo progetto mette in evidenza un design orientato agli oggetti in Java combinato con un’interfaccia grafica per offrire un’esperienza di gioco interattiva. Include livelli di difficoltà configurabili, posizionamento manuale o casuale delle navi e un flusso di gioco ben definito dalla fase di preparazione fino alla condizione di vittoria. L’implementazione pone l’accento su logica di gioco incapsulata, meccaniche a turni e controlli intuitivi come pulsanti di reset e di avvio.",
+      "details": [
+        "Implementate le meccaniche principali di Battaglia Navale in Java utilizzando principi di programmazione orientata agli oggetti per navi, griglie e flusso di gioco.",
+        "Creata un’interfaccia grafica della griglia che consente ai giocatori di posizionare le navi, avviare la partita e selezionare visivamente i bersagli.",
+        "Aggiunti livelli di difficoltà Facile e Normale per adattare il comportamento dell’avversario controllato dal computer.",
+        "Supportato il posizionamento manuale e casuale delle navi, così che i giocatori possano scegliere lo stile di preparazione preferito.",
+        "Inclusi controlli di reset e avvio per riavviare rapidamente le partite o ricalcolare casualmente le posizioni delle navi.",
+        "Progettato un gameplay a turni giocatore contro computer, con mosse alternate fino alla completa distruzione di una flotta.",
+        "Documentati possibili miglioramenti futuri come animazioni, IA migliorata e supporto multigiocatore."
+      ],
+      "images": {
+        "gameplay": "Interfaccia di gioco principale",
+        "gameplay1": "Screenshot 1 del gioco Battaglia Navale",
+        "gameplay2": "Screenshot 2 del gioco Battaglia Navale",
+        "codeStructure": "Struttura del codice e diagramma delle classi"
+      }
     }
   },
   "navigation": {

@@ -29,6 +29,26 @@
       "images": {
         "gameplay": "Haupt-Spieloberfläche"
       }
+    },
+    "battle-ship-java": {
+      "title": "Battleship-Spiel",
+      "description": "Das Battleship-Spiel ist ein klassisches Strategie-Spiel Mensch-gegen-Computer, bei dem das Ziel darin besteht, alle gegnerischen Schiffe zu versenken, bevor deine eigenen zerstört werden. Spieler können ihre Schiffe manuell platzieren oder ihre Positionen zufällig bestimmen lassen und feuern dann abwechselnd auf das gegnerische Spielfeld über eine intuitive grafische Benutzeroberfläche.",
+      "overview": "Dieses Projekt demonstriert objektorientiertes Design in Java in Kombination mit einer grafischen Benutzeroberfläche, um ein interaktives Spielerlebnis zu ermöglichen. Es bietet konfigurierbare Schwierigkeitsgrade, manuelle oder zufällige Schiffsplatzierung und einen klar definierten Spielablauf vom Aufbau bis zur Siegbedingung. Die Implementierung legt den Fokus auf gekapselte Spiellogik, rundenbasierten Spielablauf und benutzerfreundliche Steuerelemente wie Zurücksetzen- und Start-Schaltflächen.",
+      "details": [
+        "Kernmechaniken von Battleship in Java mithilfe objektorientierter Prinzipien für Schiffe, Spielfelder und Spielablauf implementiert.",
+        "Eine grafische Spielfeldoberfläche erstellt, die es Spielern ermöglicht, Schiffe zu platzieren, das Spiel zu starten und Ziele visuell auszuwählen.",
+        "Sowohl einfache als auch normale Schwierigkeitsstufen hinzugefügt, um das Verhalten des Computergegners anzupassen.",
+        "Manuelle und zufällige Schiffsplatzierung unterstützt, damit Spieler ihren bevorzugten Aufbaustil wählen können.",
+        "Steuerelemente zum Zurücksetzen und Starten integriert, um Partien schnell neu zu starten oder Schiffspositionen neu zu zufällig zu bestimmen.",
+        "Rundenbasiertes Mensch-gegen-Computer-Gameplay entworfen, bei dem Züge abwechseln, bis eine Flotte vollständig zerstört ist.",
+        "Mögliche zukünftige Erweiterungen wie Animationen, verbesserte KI und Mehrspieler-Unterstützung dokumentiert."
+      ],
+      "images": {
+        "gameplay": "Haupt-Spieloberfläche",
+        "gameplay1": "Battleship-Spiel Screenshot 1",
+        "gameplay2": "Battleship-Spiel Screenshot 2",
+        "codeStructure": "Codestruktur und Klassendiagramm"
+      }
     }
   },
   "navigation": {
