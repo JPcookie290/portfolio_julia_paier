@@ -55,6 +55,39 @@
   font-weight: 600;
 }
 
+.heroGrid {
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 900px) {
+  .heroGrid {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+  }
+}
+
+.heroVisual {
+  opacity: 0.9;
+}
+
+.heroLaptop {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+}
+
+.heroLaptop .outer {
+  stroke: var(--ink-40);
+  stroke-width: 2;
+}
+
+.heroLaptop .inner {
+  stroke: var(--ink);
+  stroke-width: 2.5;
+}
+
+
 /* ---------- QUOTE ---------- */
 .quoteSection {
   background: var(--ink-bg-soft);

@@ -3,7 +3,7 @@ import styles from "../page.module.css";
 import { projects } from "@/data/projects";
 import Link from "next/link";
 import ContactLinks from "@/components/ContactLinks/ContactLinks";
-
+import HeroLaptop from "@/components/HeroLaptop/HeroLaptop";
 
 export default function Home() {
   const t = useTranslations();
@@ -15,11 +15,19 @@ export default function Home() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.container}>
-          <h1 className={styles.name}>{t("hero.name")}</h1>
-          <div className={styles.role}>{t("hero.role")}</div>
-          <p className={styles.description}>{t("hero.desc")}</p>
+          <div className={styles.heroGrid}>
+            <div className={styles.heroText}>
+              <h1 className={styles.name}>{t("hero.name")}</h1>
+              <div className={styles.role}>{t("hero.role")}</div>
+              <p className={styles.description}>{t("hero.desc")}</p>
+            </div>
+            
+            <div className={styles.heroVisual}>
+              <HeroLaptop />
+            </div>
+          </div>
         </div>
-        
+
       </section>
 
       {/* Quote Section */}
