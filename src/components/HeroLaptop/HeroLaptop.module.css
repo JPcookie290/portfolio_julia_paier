@@ -1,27 +1,62 @@
-.heroLaptop {
+.wrap {
+  color: var(--ink); /* main color */
+  opacity: 0.95;
+}
+
+.wrap svg,
+.mark {
   width: 100%;
-  max-width: 520px;
   height: auto;
+  display: block;
+  max-width: 520px;
+}
+ 
+.soft {
+  color: var(--ink-light);
+  opacity: 0.95;
+}
+.accent {
+  color: var(--ink-accent);
+  opacity: 0.95;
+}
+.main_color {
+  color: var(--ink);
+  opacity: 0.95;
 }
 
-.heroLaptop .outer {
-  stroke: var(--ink-40);
-  stroke-width: 2;
+/* reusable hover-move utility */
+.hover-lift {
+  transition: transform 260ms ease;
 }
 
-.heroLaptop .inner {
-  stroke: var(--ink);
-  stroke-width: 2.5;
+.hover-lift:hover {
+  transform: translateY(-6px);
+}
+.hover-group .hover-item {
+  transition: transform 260ms ease, opacity 260ms ease;
 }
 
+.hoverTest:hover{
+  color: blueviolet;
+}
+.hover-group:hover .hover-item {
+  transform: translateY(-6px);
+  opacity: 1;
+}
 
-@keyframes laptop-in {
-  from {
-    opacity: 0;
-    transform: rotate(-16deg) translateY(10px);
+@media (prefers-reduced-motion: reduce) {
+  .hover-group:hover .hover-item {
+    transform: none;
   }
-  to {
-    opacity: 1;
-    transform: rotate(-12deg) translateY(0);
-  }
 }
+
+.icon {
+  transition: transform 0.4s ease;      
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.icon:hover {
+  transform: scale(1.15);               
+}
+

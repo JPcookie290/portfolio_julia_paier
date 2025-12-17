@@ -2,8 +2,8 @@
   "nav": { "work": "Work", "about": "About", "contact": "Contact" },
   "hero": {
     "name": "Julia Paier",
-    "role": "UX-minded Web Developer",
-    "desc": "I build clean, usable interfaces with a focus on structure, clarity, and thoughtful interaction.",
+    "role": "Software Developer with a focus on structured, usable interfaces",
+    "desc": "I build web applications with an emphasis on clear structure, clean code, and thoughtful user experience.",
     "ctaWork": "View selected work",
     "ctaContact": "Contact"
   },
@@ -60,7 +60,7 @@
   },
   "about": {
     "title": "About Me",
-    "intro": "I'm Julia, a UX-minded web developer with a passion for creating clean, usable interfaces. I believe that good design is about more than just aesthetics; it's about crafting experiences that are intuitive and enjoyable.",
+    "intro": "I am a software developer with a background in application development and a strong interest in building clear, well-structured user interfaces. My work focuses primarily on JavaScript and TypeScript, with experience in Java and object-oriented programming. I value clean code, understandable structure, and solutions that are easy to maintain and reason about over time.Through my background in design and UX, I pay close attention to usability, accessibility, and visual clarity — not as decoration, but as part of good software design. I enjoy working on projects where logic, structure, and user experience come together in a coherent whole.",
     "skillsTitle": "Skills & Technologies",
     "skillGroups": [
       {

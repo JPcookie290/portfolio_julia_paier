@@ -2,8 +2,8 @@
   "nav": { "work": "Projekte", "about": "Über mich", "contact": "Kontakt" },
   "hero": {
     "name": "Julia Paier",
-    "role": "UX-orientierte Web Developerin",
-    "desc": "Ich entwickle klare, nutzerfreundliche Interfaces – mit Fokus auf Struktur, Verständlichkeit und durchdachte Interaktion.",
+    "role": "Softwareentwicklerin mit Fokus auf strukturierte, benutzerfreundliche Interfaces",
+    "desc": "Ich entwickle Webanwendungen mit einem Schwerpunkt auf klarer Struktur, sauberem Code und durchdachter Nutzererfahrung.",
     "ctaWork": "Ausgewählte Projekte",
     "ctaContact": "Kontakt"
   },
@@ -60,7 +60,7 @@
   },
   "about": {
     "title": "Über mich",
-    "intro": "Ich bin Julia, eine UX-orientierte Web Developerin mit Leidenschaft für klare, nutzerfreundliche Interfaces. Für mich geht gutes Design über Ästhetik hinaus; es geht darum, Erlebnisse zu schaffen, die intuitiv und angenehm sind.",
+    "intro": "Ich bin Softwareentwicklerin mit einem Hintergrund in der Anwendungsentwicklung und einem besonderen Interesse an klar strukturierten, benutzerfreundlichen Interfaces. Mein Schwerpunkt liegt auf JavaScript und TypeScript, ergänzt durch Erfahrung in Java und objektorientierter Programmierung. Sauberer Code, verständliche Strukturen und wartbare Lösungen sind mir wichtiger als schnelle, kurzfristige Ansätze.Durch meinen Hintergrund in Design und UX achte ich besonders auf Usability, Accessibility und visuelle Klarheit – nicht als dekoratives Element, sondern als integralen Bestandteil guter Software. Ich arbeite gerne an Projekten, bei denen Logik, Struktur und Nutzererlebnis sinnvoll zusammenfinden.",
     "skillsTitle": "Fähigkeiten & Technologien",
     "skillGroups": [
       { 

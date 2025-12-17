@@ -73,7 +73,7 @@
 
 .heroLaptop {
   width: 100%;
-  max-width: 520px;
+  max-width: 550px;
   height: auto;
 }
 
@@ -145,10 +145,13 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(12, 1fr);
+  align-items: stretch;
 }
 
 .card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   grid-column: span 12;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 18px;
@@ -193,6 +196,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-top: auto;
 }
 
 .tag {
@@ -227,7 +231,7 @@
 
 .aboutIntro {
   color: var(--ink-80);
-  max-width: 72ch;
+  max-width: 100%;
   font-size: 1.05rem;
   margin: 0;
 }

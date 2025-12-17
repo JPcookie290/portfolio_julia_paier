@@ -2,8 +2,8 @@
   "nav": { "work": "Progetti", "about": "Su di me", "contact": "Contatto" },
   "hero": {
     "name": "Julia Paier",
-    "role": "Web Developer con mindset UX",
-    "desc": "Creo interfacce pulite e usabili, con attenzione a struttura, chiarezza e interazioni curate.",
+    "role": "Sviluppatrice software con focus su interfacce strutturate e usabili",
+    "desc": "Realizzo applicazioni web con particolare attenzione alla struttura, al codice pulito e a un’esperienza utente ben pensata.",
     "ctaWork": "Progetti selezionati",
     "ctaContact": "Contatto"
   },
@@ -60,7 +60,7 @@
   },
   "about": {
     "title": "Su di me",
-    "intro": "Sono Julia, una web developer con mindset UX e passione per la creazione di interfacce pulite e usabili. Credo che un buon design vada oltre l’estetica; si tratta di creare esperienze intuitive e piacevoli.",
+    "intro": "Sono una sviluppatrice software con una formazione nello sviluppo di applicazioni e un forte interesse per la creazione di interfacce chiare e ben strutturate. Il mio lavoro si concentra principalmente su JavaScript e TypeScript, con esperienza anche in Java e nella programmazione orientata agli oggetti. Do grande importanza al codice pulito, a strutture comprensibili e a soluzioni facili da mantenere nel tempo. Grazie al mio background in design e UX, presto particolare attenzione all’usabilità, all’accessibilità e alla chiarezza visiva — non come semplice elemento estetico, ma come parte integrante di un buon software. Mi piace lavorare su progetti in cui logica, struttura ed esperienza utente si integrano in modo coerente.",
     "skillsTitle": "Competenze e tecnologie",
     "skillGroups": [
       {
