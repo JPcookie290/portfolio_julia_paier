@@ -7,7 +7,6 @@ import Nav from "@/components/Nav/Nav";
 import Footer from "@/components/Footer/Footer";
 import { Suspense } from "react";
 
-
 export default async function LocaleLayout({
   children,
   params,
@@ -26,7 +25,7 @@ export default async function LocaleLayout({
 
   return (
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={null}>
             <Nav />
           </Suspense>
           {children}
