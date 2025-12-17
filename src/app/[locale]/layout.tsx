@@ -5,6 +5,7 @@ import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Nav from "@/components/Nav/Nav";
 import Footer from "@/components/Footer/Footer";
+import { Suspense } from "react";
 
 
 export default async function LocaleLayout({
@@ -25,7 +26,9 @@ export default async function LocaleLayout({
 
   return (
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Nav />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Nav />
+          </Suspense>
           {children}
           <Footer />
         </NextIntlClientProvider>
