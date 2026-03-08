@@ -7,7 +7,7 @@ import styles from "./Nav.module.css";
 
 export default function Nav() {
   const locale = useLocale();
-  const t = useTranslations("navigation");
+  const t = useTranslations("nav");
 
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -39,7 +39,7 @@ export default function Nav() {
         <div className={styles.menu}>
           {menu.map((item) => (
             <a key={item} href={`#${item}`}>
-              {item.charAt(0).toUpperCase() + item.slice(1)}
+              {t(item)}
             </a>
           ))}
         </div>
