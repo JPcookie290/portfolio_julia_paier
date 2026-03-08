@@ -119,7 +119,7 @@ export default function Home() {
               linkedinLabel={t("contact.linkedinLabel")}
               githubUrl="https://github.com/JPcookie290"
               linkedinUrl="https://www.linkedin.com/in/julia-paier-489362183"
-              cvHref="/Lebenslauf_Julia_Paier.pdf"
+              cvHref={t("cv")}
             />
           </div>
         </div>

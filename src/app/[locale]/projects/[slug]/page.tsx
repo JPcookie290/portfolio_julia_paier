@@ -22,7 +22,7 @@ export default async function ProjectPage({
   if (!project) return notFound();
 
   // ✅ Server-safe translations (no hooks)
-  const tNav = await getTranslations("navigation");
+  const tNav = await getTranslations("nav");
   const tSection = await getTranslations("projectsSection");
   const tProject = await getTranslations(`projects.${slug}`);
 
